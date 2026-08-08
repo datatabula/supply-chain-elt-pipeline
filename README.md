@@ -1,4 +1,4 @@
-# Supply Chain ETL Pipeline
+# Supply Chain ELT Pipeline
 
 An end-to-end ELT pipeline built for a Japan-based B2B automotive aftermarket parts distributor, turning fragmented logistics data — SAP orders, warehouse events, transportation tracking, and carrier invoices — into a single trusted, analytics-ready mart.
 
@@ -8,7 +8,7 @@ An end-to-end ELT pipeline built for a Japan-based B2B automotive aftermarket pa
 
 ## Business Problem
 
-The distributor supplies repair shops and dealerships across Japan with aftermarket parts, where a delayed shipment doesn't just miss an SLA — it means a vehicle sits on the lift and a shop loses a day of billable work. Operational data lived across SAP S/4HANA, SAP EWM, a manually maintained TMS spreadsheet, and finance invoice exports — with no system talking to any other. Analysts pulled each source separately, cleaned it by hand in Excel, and recalculated the same KPIs in every report. The result was predictable: reporting was slow, the same metric came out differently depending on who built the spreadsheet, and by the time a delayed shipment or an invoice mismatch surfaced, it was too late to act on it.
+The distributor supplies repair shops and dealerships across Japan with aftermarket parts, where a delayed shipment doesn't just miss an SLA — it means a vehicle sits on the lift and a shop loses a day of billable work. Operational data lived across SAP S/4HANA, SAP EWM, a manually maintained TMS spreadsheet, and finance invoice exports — with no system talking to any other. Analysts pulled each source separately, cleaned it by hand in Excel, and recalculated the same KPIs in every report. Reporting was slow, the same metric came out differently depending on who built the spreadsheet, and by the time a delayed shipment or an invoice mismatch surfaced, it was too late to act on it.
 
 The underlying question this project answers: **how do you standardize operational data from multiple logistics systems into a single trusted layer that produces the same numbers everywhere, every time?**
 
