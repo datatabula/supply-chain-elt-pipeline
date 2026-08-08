@@ -143,25 +143,32 @@ Inventory/procurement KPIs (V2), finance and invoice-matching KPIs (V3), and ret
 ## Repository Structure
 
 ```
-supply-chain-etl-pipeline/
+supply-chain-elt-pipeline/
 ├── README.md
 ├── ingestion/
 │   ├── ingest.py            # extract, validate, land, load
 │   ├── config.py
 │   ├── validators.py
-│   └── requirements.txt
+│   ├── requirements.txt
+│   └── .env.example         # template — copy to .env and fill in real values
 ├── data/
-│   └── source/               # synthetic source files (git-ignored in practice)
+│   └── raw/                  # synthetic source files (sap_sales_orders.csv, etc.)
 ├── logistics_transform/      # dbt project
 │   ├── dbt_project.yml
+│   ├── analyses/
+│   │   └── reconciliation.sql   # row-count reconciliation query
 │   ├── models/
 │   │   ├── staging/           # stg_sap__sales_orders, stg_ewm__warehouse_events, ...
 │   │   ├── intermediate/      # int_shipment_milestones, int_orders_with_shipments, ...
-│   │   └── marts/             # fct_logistics_performance, dim_carrier, dim_warehouse, dim_date
+│   │   └── marts/             # fct_logistics_performance, dim_carrier, dim_warehouse, dim_date, schema.yml (tests)
 │   ├── seeds/                 # carrier_mapping.csv, warehouse_mapping.csv
 │   ├── macros/                # generate_schema_name.sql
-│   └── tests/                 # schema.yml test definitions
+│   ├── snapshots/              # empty for V1
+│   └── tests/                  # empty for V1 — generic tests defined in models/marts/schema.yml instead
 └── docs/
-    ├── architecture/          # decision records, diagrams
-    └── kpi-dictionary.md
+    ├── architecture_diagram.png
+    ├── lineage_graph.png
+    ├── dbt_test.png
+    ├── reconciliation.png
+    └── fact_table.png
 ```
