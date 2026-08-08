@@ -1,0 +1,42 @@
+version: 2
+
+models: 
+  - name: fct_logistics_performance
+    columns:
+      - name: shipment_id
+        tests:
+          - unique
+          - not_null
+      - name: sales_order_id
+        tests:
+          - not_null
+      #dbt relationship test that checks that every carrier_id in one table actually exists in the dim_carrier dimention table
+      - name: carrier_id
+        tests:
+          - relationships:
+              to: ref('dim_carrier')
+              field: carrier_id
+      #dbt relationship test that checks that every warehouse_id in a table acually exists in dim_warehouse
+      - name: warehouse_id
+        tests: 
+          - relationships:
+              to: ref('dim_warehouse')
+              field: warehouse_id
+      - name: shipment_status
+        tests: 
+          - accepted_values: 
+              values: ['Delivered', 'In Transit', 'Delayed', 'delayed - customs']
+
+  - name: dim_carrier
+    columns:
+      - name: carrier_id
+        tests: 
+          - unique
+          - not_null
+
+  - name: dim_warehouse
+    columns: 
+      - name: warehouse_id 
+        tests:
+          - unique
+          - not_null

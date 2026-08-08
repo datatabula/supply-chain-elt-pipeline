@@ -1,0 +1,5 @@
+raw_warehouse_code,standard_warehouse_id,warehouse_name,region_site_type
+1000,WH01,Tokyo Bay DC,Kanto / DC
+2000,WH02,Osaka North WH,Kansai / WH
+3000,WH03,Nagoya East WH,Chubu / WH
+4000,WH04,Fukuoka WH,Kyushu / WH

@@ -1,0 +1,9 @@
+raw_carrier_name,standard_carrier_code,standard_carrier_name,active_flag
+DHL,DHL,DHL Japan,Y
+dhl,DHL,DHL Japan,Y
+DHL Express,DHL,DHL Japan,Y
+Yamato,YAMATO,Yamato Transport,Y
+ヤマト運輸,YAMATO,Yamato Transport,N
+Yamato Transport,YAMATO,Yamato Transport,Y
+Sagawa,SAGAWA,Sagawa Express,Y
+SAGAWA EXPRESS,SAGAWA,Sagawa Express,N

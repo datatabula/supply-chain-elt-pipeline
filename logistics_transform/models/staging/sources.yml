@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: raw
+    database: logistics_platform
+    schema: raw
+    tables:
+      - name: sap_sales_orders
+      - name: sap_ewm_warehouse_events
+      - name: transportation_tracking
+      - name: carrier_invoices
+
