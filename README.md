@@ -161,7 +161,7 @@ supply-chain-elt-pipeline/
 │   ├── config.py
 │   ├── validators.py
 │   ├── requirements.txt
-│   └── .env.example         # template — copy to .env and fill in real values
+│   
 ├── data/
 │   └── raw/                  # synthetic source files (sap_sales_orders.csv, etc.)
 ├── logistics_transform/      # dbt project
