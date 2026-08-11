@@ -5,6 +5,10 @@ An end-to-end ELT pipeline built for a Japan-based B2B automotive aftermarket pa
 **Status:** V1 complete — reliable, tested shipment-level data. V2–V5 add inventory/procurement, multi-carrier invoicing, orchestration, and decision-support features (see Roadmap in `/docs`).
 
 ---
+🎥 Project Demo
+
+[![Watch the project demo](docs/demo-thumbnail.png)](https://youtu.be/oeM85nAuBWk)
+---
 
 ## Business Problem
 
