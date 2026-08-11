@@ -6,8 +6,15 @@ An end-to-end ELT pipeline built for a Japan-based B2B automotive aftermarket pa
 
 ---
 🎥 Project Demo
+<p align="left">
+  <a href="https://youtu.be/oeM85nAuBWk">
+    <img src="docs/YT%20thumbnail.png" width="550" alt="Project demo thumbnail">
+  </a>
+</p>
 
-[![Watch the project demo](docs/YT%20thumbnail.png)](https://youtu.be/oeM85nAuBWk)
+<p>
+  <a href="https://youtu.be/oeM85nAuBWk"><strong>▶ Watch the project demo</strong></a>
+</p>
 ---
 
 ## Business Problem
